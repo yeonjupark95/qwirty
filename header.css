@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+.main-nav{
+    display: flex;
+    flex-flow: row;
+    background-color: #44b;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Dosis';
+    font-size: 16px;
+}
+
+.sub-nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.horizontal.nav-list.full-width{
+    display: none;
+}
+
+.horizontal.nav-list.short-width{
+    display: flex;
+}
+
+@media (min-width:768px){
+    .horizontal.nav-list.full-width{
+        display: flex;
+    }
+    .horizontal.nav-list.short-width{
+        display: none;  
+    }
+    .nav-list a{
+        padding: 0.5rem;
+        color: white;
+        border-right: 0.1rem solid rgb(158, 156, 156);
+    }
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-list a{
+    padding: 0.15rem;
+    color: white;
+    border-right: 0.1rem solid rgb(158, 156, 156);
+}
+
+.nav-list li:last-of-type a{
+    border-right: none;
+}
+
+li{
+    list-style: none;
+}
+
+a:link{
+    text-decoration: none;
+}
+.company-name{
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: #44b;
+    font-weight: 800;
+    margin-right: 2rem;
+}
+
+.credit-offer{
+    background-color: rgb(255, 72, 0);
+    color: white;
+    font-family: 'Dosis';
+    padding: 0.5rem;
+    font-size: 16px;
+}
+
+form.search-form{
+    display: flex; 
+}
+
+input{
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid #44b;
+    padding-right: 35rem;
+}
+
+button{
+    border: none;
+    background-color: #44b;
+    color: white;
+    padding: 0.5rem;
+}
+
+@media (max-width:768px){
+    input{
+        padding-right: 5em;
+    }
+
+    button{
+        margin-right: 1em;
+    }
+
+    .company-name{
+        display: flex;
+        font-size: 2rem;
+        margin: 0.5rem;
+    }
+
+    .credit-offer{
+        margin-top: 0.3rem;
+        padding: 0.3rem;
+        font-size: 12px;
+    }
+    .sub-nav{
+        flex-wrap: wrap;
+    }
+}

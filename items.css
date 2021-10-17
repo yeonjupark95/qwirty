@@ -1,0 +1,91 @@
+.items{
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Open Sans', sans-serif;
+    align-items: flex-start;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.item{
+    flex: 1 0 16rem;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    box-shadow: 0 2px 5px -2px black;
+}
+
+.item-image{
+    width: 100%;
+}
+
+.item-name{
+    background-color: #44b;
+    color: white;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem;
+    font-size: 16px;
+}
+
+.fact-line{
+    background-color: #44b;
+    color: white;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 0.3rem;
+}
+
+.fact-name{
+    font-weight: 800;
+    margin-right: 5px;
+}
+
+.add-item{
+    background-color: rgb(29, 29, 82);
+    color: white;
+    padding: 0.3rem;
+    border-radius: 50%;
+}
+
+.item-description{
+    padding: 0.3rem;
+}
+
+@media (max-width: 768px){
+    .item{
+        font-size: 18px;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .items{
+        margin-right: 10px;
+    }
+
+    .item-name{
+        font-size: 25px;
+        padding: 0.5rem;
+    }
+
+    .add-item{
+        padding: 0.5rem;
+    }
+
+    .fact-line{
+        padding: 0.5rem;
+        font-size: 25px;
+    }
+
+    .item-description{
+        padding: 0.5rem;
+    }
+
+    .items{
+        flex-direction: row;
+    }
+}

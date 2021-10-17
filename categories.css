@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+main{
+    display: flex;
+}
+
+.categories {
+    flex: 0 0 256px;
+    display: flex;
+    flex-direction: column;
+}
+
+.categories a{
+    text-decoration: none;
+    font-weight: 800;
+    font-family: 'Dosis';
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 100;
+    margin: 0.5rem 2rem;
+    color: white;
+    background-color: #44b;
+}
+
+.categories a:hover {
+    box-shadow: 0 2px 5px -2px black;
+}
+
+@media (max-width: 768px){
+    .categories {
+        flex: 0 0 120px;
+    }
+    
+    .categories a{
+        font-size: 1rem;
+        margin: 0.25rem 0.5rem;
+    }
+}
